@@ -4,6 +4,7 @@ import { Inter } from 'next/font/google'
 import styles from '@/styles/Home.module.css'
 import { Links } from '../components/links'
 import { Logo } from '../components/logo'
+import HeadLine from '@/components/head_line'
 const inter = Inter({ subsets: ['latin'] })
 
 export default function Home() {
@@ -17,9 +18,7 @@ export default function Home() {
       </Head>
       <main className={`${styles.main} ${inter.className}`}>
         <div className={styles.description}>
-          <p>
-            About page            
-          </p>
+          <HeadLine page='about'/>
           <Logo />
         </div>
 
