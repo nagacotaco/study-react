@@ -19,7 +19,7 @@ export default function Home() {
       </Head>
       <main className={`${styles.main} ${inter.className}`}>
         <div className={styles.description}>
-          <HeadLine page='index'/>
+          <HeadLine page='Taisei Nagata'/>
           <Logo />
         </div>
 

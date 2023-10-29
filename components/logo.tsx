@@ -11,11 +11,11 @@ export function Logo() {
             >
               Thanks By{' '}
               <Image
-                src="/vercel.svg"
+                src="/Tetrabox_logomark_basic_fullcolor_positive.png"
                 alt="Vercel Logo"
                 className={styles.vercelLogo}
                 width={100}
-                height={24}
+                height={35}
                 priority
               />
             </a>

@@ -7,59 +7,58 @@ export function Links() {
   return (
     <div className={styles.grid}>
           <a
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
+            href="https://www.scsk-kyushu.co.jp/recruit/interview/16.html"
             className={styles.card}
             target="_blank"
             rel="noopener noreferrer"
           >
             <h2>
-              Docs <span>-&gt;</span>
+              SCSK <span>-&gt;</span>
             </h2>
             <p>
-              Find in-depth information about Next.js features and&nbsp;API.
+              I joined this company as a new graduate. I did not enjoy my job. It was hard.
             </p>
           </a>
 
           <a
-            href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
+            href="https://www.tetrabox.tech/"
             className={styles.card}
             target="_blank"
             rel="noopener noreferrer"
           >
             <h2>
-              Learn <span>-&gt;</span>
+              Tetrabox.inc <span>-&gt;</span>
             </h2>
             <p>
-              Learn about Next.js in an interactive course with&nbsp;quizzes!
+              Established on 3/31/2023. I enjoy working with my two colleagues!
             </p>
           </a>
 
           <a
-            href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
+            href="https://billage.space/members/tetrabox"
             className={styles.card}
             target="_blank"
             rel="noopener noreferrer"
           >
             <h2>
-              Templates <span>-&gt;</span>
+              Billage Article <span>-&gt;</span>
             </h2>
             <p>
-              Discover and deploy boilerplate example Next.js&nbsp;projects.
+              Featured in an article about a shared office currently in use.
             </p>
           </a>
 
           <a
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
+            href="chrome-extension://oemmndcbldboiebfnladdacbdfmadadm/https://runrunrun.jp/wp/wp-content/uploads/2023/02/%E3%83%8F%E3%83%BC%E3%83%95%E3%81%BF%E3%81%A9%E3%82%8A%E4%BC%9A%E7%94%B7%E5%AD%90-1.pdf"
             className={styles.card}
             target="_blank"
             rel="noopener noreferrer"
           >
             <h2>
-              Deploy <span>-&gt;</span>
+              Marathon Result <span>-&gt;</span>
             </h2>
             <p>
-              Instantly deploy your Next.js site to a shareable URL
-              with&nbsp;Vercel.
+              I ran a marathon with three work colleagues. The results are at ..... See the link.
             </p>
           </a>
         </div>
