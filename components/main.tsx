@@ -1,9 +1,9 @@
-import { HeadLine } from '@/components/head_line'
-import styles from '@/styles/Home.module.css'
+import { HeadLine } from '@/components/Headline'
 import { Inter } from 'next/font/google'
 import Image from 'next/image'
-import { Links } from '../components/links'
-import { Logo } from '../components/logo'
+import { Links } from './Links'
+import { Logo } from './Logo'
+import styles from "./Main.module.css"
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -22,7 +22,6 @@ export function Main(props: any) {
 
                 <div className={styles.center}>
                     <Image
-                        className={styles.logo}
                         src="/ngt.png"
                         alt="Next.js Logo"
                         width={180}
