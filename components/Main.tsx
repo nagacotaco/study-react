@@ -8,31 +8,31 @@ import styles from "./Main.module.css"
 const inter = Inter({ subsets: ['latin'] })
 
 export function Main(props: any) {
-    return (
-        <>
-            <main className={`${styles.main} ${inter.className}`}>
-                <div className={styles.description}>
-                    <HeadLine
-                        page={props.page}
-                    >
-                        <code className={styles.code}>pages/{props.page}.js</code>
-                    </HeadLine>
-                    <Logo />
-                </div>
+	return (
+		<>
+			<main className={`${styles.main} ${inter.className}`}>
+				<div className={styles.description}>
+					<HeadLine
+						page={props.page}
+					>
+						<code className={styles.code}>pages/{props.page}.js</code>
+					</HeadLine>
+					<Logo />
+				</div>
 
-                <div className={styles.center}>
-                    <Image
-                        src="/ngt.png"
-                        alt="Next.js Logo"
-                        width={180}
-                        height={50}
-                        priority
-                    />
-                </div>
+				<div className={styles.center}>
+					<Image
+						src="/ngt.png"
+						alt="Next.js Logo"
+						width={180}
+						height={50}
+						priority
+					/>
+				</div>
 
-                <Links />
+				<Links />
 
-            </main>
-        </>
-    )
+			</main>
+		</>
+	)
 }
