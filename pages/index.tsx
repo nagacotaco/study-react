@@ -1,12 +1,5 @@
-import { HeadLine } from '@/components/head_line'
-import styles from '@/styles/Home.module.css'
-import { Inter } from 'next/font/google'
+import { Main } from '@/components/main'
 import Head from 'next/head'
-import Image from 'next/image'
-import { Links } from '../components/links'
-import { Logo } from '../components/logo'
-
-const inter = Inter({ subsets: ['latin'] })
 
 export default function Home() {
   return (
@@ -17,26 +10,7 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <main className={`${styles.main} ${inter.className}`}>
-        <div className={styles.description}>
-          <HeadLine page='Taisei Nagata' />
-          <Logo />
-        </div>
-
-        <div className={styles.center}>
-          <Image
-            className={styles.logo}
-            src="/ngt.png"
-            alt="Next.js Logo"
-            width={180}
-            height={50}
-            priority
-          />
-        </div>
-
-        <Links />
-
-      </main>
+      <Main page="index"></Main>
     </>
   )
 }
