@@ -1,5 +1,5 @@
 import Head from 'next/head';
-import { ChangeEvent, useCallback, useEffect, useState } from 'react';
+import { useCallback, useEffect, useState } from 'react';
 import { Header } from 'src/components/Header/Header';
 import { Main } from 'src/components/Main/Main';
 import styles from 'src/styles/Home.module.css';
@@ -8,6 +8,7 @@ export default function Home() {
   const [count, setCount] = useState(1);
   const [text, setText] = useState('');
   const [isShow, setIsShow] = useState(true);
+  const [array, setArray] = useState([]);
 
   useEffect(() => {
     document.body.style.backgroundColor = 'lightblue';
@@ -17,10 +18,10 @@ export default function Home() {
   }, []);
 
   const handleClick = useCallback(() => {
-    setCount((count) => count + 1);
+    setCount((prevCount) => prevCount + 1);
   }, []);
 
-  const handleTextChange = useCallback((e: ChangeEvent<HTMLInputElement>) => {
+  const handleTextChange = useCallback((e: any) => {
     if (e.target.value.length > 5) {
       alert('asf');
       return;
@@ -29,8 +30,18 @@ export default function Home() {
   }, []);
 
   const handleIsShow = useCallback(() => {
-    setIsShow((isShow) => !isShow);
+    setIsShow((prevIsShow) => !prevIsShow);
   }, []);
+
+  const handleAddText = useCallback(() => {
+    setArray((prevArray: any) => {
+      if (prevArray.includes(text)) {
+        setText('');
+        return prevArray;
+      }
+      return [...prevArray, text];
+    });
+  }, [text]);
 
   return (
     <div className={styles.container}>
@@ -44,6 +55,12 @@ export default function Home() {
       <button onClick={handleIsShow}>非表示</button>
 
       <input type="text" value={text} onChange={handleTextChange} />
+      <button onClick={handleAddText}>追加</button>
+      <ul>
+        {array.map((item) => {
+          return <li key={item}>{item}</li>;
+        })}
+      </ul>
 
       <Main page="index"></Main>
     </div>
