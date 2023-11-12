@@ -1,4 +1,5 @@
 import Head from 'next/head';
+import Link from 'next/link';
 import { useCallback, useEffect } from 'react';
 import { Header } from 'src/components/Header/Header';
 import { Main } from 'src/components/Main/Main';
@@ -13,6 +14,7 @@ export default function Home() {
   }, []);
   const handleClick = useCallback((e: any) => {
     e.preventDefault();
+    alert('123');
   }, []);
   return (
     <div className={styles.container}>
@@ -20,9 +22,9 @@ export default function Home() {
         <title>Index Page</title>
       </Head>
       <Header />
-      <a href="/about" onClick={handleClick}>
+      <Link href="/about" onClick={handleClick}>
         ボタン
-      </a>
+      </Link>
       <Main page="index"></Main>
     </div>
   );
